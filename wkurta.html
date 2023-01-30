@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurta(Women)</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <link rel="stylesheet" href="/dist/output.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   <script src="https://kit.fontawesome.com/7d52882801.js" crossorigin="anonymous"></script>
+ <style>
+.closecart{
+    height: 0px;
+    width: 0px;
+}
+.showcart{
+    background-color: orange;
+    width: 300px;
+    height: auto;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #B10F2E;
+  background-color: transparent;
+  text-decoration: none;
+}
+.cart{
+   display: block;
+border: 2px solid black;
+    width: 300px;
+    height: auto;
+    background-color: cornsilk;
+}
+.productimage{
+    width: 295px;
+    padding: 5px;
+    height: 300px
+}
+
+#title1{
+    color: black;
+    font-size: 1.25rem;
+}
+#size{
+    color: black;
+    font-size: 1.25rem;
+}
+#quantity{
+    color: black;
+    font-size: 1.25rem;
+    margin-left: 56px;
+}
+#price{
+    color: black;
+    font-size: 1.25rem;
+    display: flex;
+    justify-self: flex-end;
+    margin-left: 219px;
+    margin-top: -35px;
+}
+#title{
+    color: #B10F2E;
+    font-size: 4rem;
+    margin-left: 23px;
+}
+.totalprice{
+    border-top: 2px solid #011627;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.total{
+    margin-left: 175px;
+}
+
+/* a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+} */
+ </style>
+</head>
+<body>
+    
+        <header>
+       <section class="headertop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="top-left">
+                        <a class="download-text" href=""><i class="fas fa-mobile-alt"></i>Download App</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 topRight">
+                    <a class="logintext" href="signuppage.html">Login / Register  </a>
+                    <div class="socialIcon">
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-google-plus-square"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--Only navbar-->
+    <nav class="navbar navbar-expand-lg  headerNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Shoptacle</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="newbar collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="newbar nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="newbar nav-link" href="Ppage.html">Products</a>
+                    </li>
+            <li class="nav-item dropdown">
+                <a class="newbar nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Men
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" style="color:black" href="Mtshirts.html">T-shirts</a></li>
+                    <!-- <li><a class="dropdown-item" style="color:black" href="#">Casual Shirts</a></li> -->
+                    <li><a class="dropdown-item" style="color:black" href="Mshirts.html">Formal Shirts</a></li>
+                    <li><a class="dropdown-item" style="color:black" href="#">Jeans</a></li>
+                    <li><a class="dropdown-item" style="color:black" href="#">Jackets</a></li>
+                    <li><a class="dropdown-item" style="color:black" href="#">Kurta</a></li>
+                    <li><a class="dropdown-item" style="color:black" href="#">Shorts</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="newbar nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Women
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" style="color:black" href="WKurta.html">Kurta</a></li>
+                    <li><a class="dropdown-item" style="color:black" href="WSarees.html">Sarees</a></li>
+                    <li><a class="dropdown-item" style="color:black" href="#">T-shirts</a></li>
+                    <li><a class="dropdown-item" style="color:black" href="#">Jeans</a></li>
+                    <li><a class="dropdown-item" style="color:black" href="#">Tops</a></li>
+                </ul>
+            </li>
+            </ul>
+            <form class="d-flex searchForm" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class=" btn btn-success " style="background-color: #011627; border:#011627" type="submit">Search</button>
+            </form>
+            <div class="rightSide">
+                <a href=""><i id="showcart" class="fa fa-shopping-cart"></i></a>
+
+                <span><a href=""><i class="fa fa-user"></i></a></span> 
+            </div>
+        </div>
+    </div>
+</nav>
+</header>    
+<br>
+<ul class="nav nav-pills;"style="justify-content:center;display:flex;font-size:1.75em;">
+    <li class="nav-item" >
+      <a class="nav-link active" aria-current="page" href="#"></a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" style="color:black" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Price Range</a>
+      <ul class="dropdown-menu" style="font-size:large">
+        <li><a class="dropdown-item" style="color:black"href="#">Rs 500 - Rs 1000</a></li>
+        <li><a class="dropdown-item" style="color:black"href="#">Rs 1000 - Rs 1500</a></li>
+        <li><a class="dropdown-item" style="color:black" href="#">Rs 1500 - Rs 2000</a></li>
+        <!-- <li><hr class="dropdown-divider"></li> -->
+      </ul>
+    </li>
+    <li class="nav-item dropdown" >
+        <a class="nav-link dropdown-toggle" style="color:black" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Discount</a>
+        <ul class="dropdown-menu" style="font-size:large">
+          <li><a class="dropdown-item" style="color:black" href="#">10% - 25 %</a></li>
+          <li><a class="dropdown-item" style="color:black" href="#">25% - 50%</a></li>
+          <li><a class="dropdown-item" style="color:black" href="#">50% - 70%</a></li>
+          <!-- <li><hr class="dropdown-divider"></li> -->
+        </ul>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color:black" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Brand</a>
+        <ul class="dropdown-menu" style="font-size:large">
+          <li><a class="dropdown-item" style="color:black"href="#">AVAASA MIX N'MATCH</a></li>
+          <li><a class="dropdown-item" style="color:black"href="#">AKS</a></li>
+          <li><a class="dropdown-item" style="color:black" href="#">INDIE CLOSET</a></li>
+          <li><a class="dropdown-item" style="color:black" href="#">KIMAYRA</a></li>
+          <!-- <li><hr class="dropdown-divider"></li> -->
+        </ul>
+    </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li> -->
+  </ul>
+<!-- to have some space -->
+<br><br><br><br><br>
+<!-- CONTENT -->
+<div style="display:flex;justify-content:center;flex-wrap:wrap;flex-direction:row;gap:95px;">
+    <div class="card item" style="width: 18rem;box-shadow: -15px 15px 50px gainsboro;border-radius: 13px;" id="item1">
+        <img src="KurtaWomen1(i).jpg"  id="kimayraimage" class="card-img-top" style="height:275px" alt="...">
+        <div class="card-body" style="padding: 20px;">
+            <a href="WKurta1.html"><h3 style="font-size:29px;font-weight: bold;" >KIMAYRA</h3></a>
+    <div style ="font-size: larger;">PRINTED ANARKALI KURTA SUIT SET</div>
+    <div style="padding-top: 8px;display: flex;flex-direction: row;gap:10px">
+        <div  id="Size1"style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >S</div>
+        <div  id="Size2"style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >M</div>
+        <div  id="Size3"style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >L</div>
+        <div  id="Size4"style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >XL</div>
+        <div id="Size5"style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >XXL</div>
+        <button id="cart" style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px">cart</button>
+    </div>
+    <div style="font-size:xx-large;font-weight:bolder" >Rs.1799</div>
+    
+        <s style="color:gray;padding-left: 2px;padding-top:25px;" > Rs.2799</s>
+        <span style="font-size:large;color: palevioletred;">&#40 46% off &#41</span>
+    
+        </div>
+    </div>
+    <div class="card item" style="width: 18rem;box-shadow: -15px 15px 50px gainsboro;border-radius: 13px;">
+        <img src="KurtaWomen2(i).jpg" class="card-img-top" style="height:275px" alt="...">
+        <div class="card-body" style="padding: 20px;">
+            <a href="WKurta2.html"><h3 style="font-size:29px;font-weight: bold;">GLAM ROOTS</h3></a>
+    <div style ="font-size: larger;">FLORAL FLARED KURTA</div>
+    <div style="padding-top: 8px;display: flex;flex-direction: row;gap:10px">
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >S</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >M</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >L</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >XL</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >XXL</div>
+        <button id="cart" style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px">cart</button>
+    </div>
+    <div style="font-size:xx-large;font-weight:bolder">Rs.660</div>
+    
+        <s style="color:gray;padding-left: 2px;" > Rs.1999</s>
+        <span style="font-size:large;color: palevioletred;">&#40 67% off &#41</span>
+        </div>
+    </div>
+
+    <div class="card item" style="width: 18rem;box-shadow: -15px 15px 50px gainsboro;border-radius: 13px;">
+        <img src="KurtaWomen3(i).jpg" class="card-img-top" style="height:275px" alt="...">
+        <div class="card-body" style="padding: 20px;">
+            <a href="WKurta3.html"><h3 style="font-size:29px;font-weight: bold;">AVAASA MIX N'MATCH</h3></a>
+    <div style ="font-size: larger;">PRINTED ANARKALI KURTA</div>
+    <div style="padding-top: 8px;display: flex;flex-direction: row;gap:10px">
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >S</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >M</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >L</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >XL</div>
+        <button id="cart" style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px">cart</button>
+    </div>
+    <div style="font-size:xx-large;font-weight:bolder">Rs.1299</div>
+    
+        <s style="color:gray;padding-left: 2px;" > Rs.1999</s>
+        <span style="font-size:large;color: palevioletred;">&#40 35% off &#41</span>
+    
+        </div>
+    </div>
+
+    <div class="card item" style="width: 18rem;box-shadow: -15px 15px 50px gainsboro;border-radius: 13px;">
+        <img src="KurtaWomen4(i).jpg" class="card-img-top" style="height:275px" alt="...">
+        <div class="card-body" style="padding: 20px;">
+            <a href="WKurta4.html"><h3 style="font-size:29px;font-weight: bold;">AVAASA MIX N'MATCH</h3></a>
+    <div style ="font-size: larger;">PRINTED FLARED KURTA WITH EMBOIDERY</div>
+    <div style="padding-top: 8px;display: flex;flex-direction: row;gap:10px">
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >S</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >M</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >L</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >XL</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >XXL</div>
+        <button id="cart" style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px">cart</button>
+    </div>
+    <div style="font-size:xx-large;font-weight:bolder">Rs.899</div>
+    
+        <s style="color:gray;padding-left: 2px;" > Rs.1799</s>
+        <span style="font-size:large;color: palevioletred;">&#40 50% off &#41</span>
+    
+        </div>
+    </div>
+
+    <div class="card item" style="width: 18rem;box-shadow: -15px 15px 50px gainsboro;border-radius: 13px;">
+        <img src="KurtaWomen5(i).jpg" class="card-img-top" style="height:275px" alt="...">
+        <div class="card-body" style="padding: 20px;">
+            <a href="WKurta5.html"><h3 style="font-size:29px;font-weight: bold;">AVAASA MIX N'MATCH</h3></a>
+    <div style ="font-size: larger;">PRINTED STRAIGHT KURTA WITH BAND COLLAR</div>
+    <div style="padding-top: 8px;display: flex;flex-direction: row;gap:10px">
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >XS</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >S</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >M</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >L</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >XL</div>
+        <button id="cart" style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px">cart</button>
+    </div>
+    <div style="font-size:xx-large;font-weight:bolder">Rs.499</div>
+        <s style="color:gray;padding-left: 2px;" > Rs.899</s>
+        <span style="font-size:large;color: palevioletred;">&#40 50% off &#41</span>
+        </div>
+    </div>
+
+    <div class="card item" style="width: 18rem;box-shadow: -15px 15px 50px gainsboro;border-radius: 13px;">
+        <img src="KurtaWomen6(i).jpg" class="card-img-top" style="height:275px" alt="...">
+        <div class="card-body" style="padding: 20px;">
+            <a href="WKurta6.html"><h3 style="font-size:29px;font-weight: bold;">AVAASA MIX N'MATCH</h3></a>
+    <div style ="font-size: larger;">FLORAL PRINT A-LINE KURTA WITH SIDE TIE-UP</div>
+    <div style="padding-top: 8px;display: flex;flex-direction: row;gap:10px">
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >S</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >M</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >L</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >XL</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >XXL</div>
+        <button id="cart" style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px">cart</button>
+    </div>
+    <div style="font-size:xx-large;font-weight:bolder">Rs.490</div>
+    
+        <s style="color:gray;padding-left: 2px;" > Rs.999</s>
+        <span style="font-size:large;color: palevioletred;">&#40 51% off &#41</span>
+    
+        </div>
+    </div>
+
+    <div class="card item" style="width: 18rem;box-shadow: -15px 15px 50px gainsboro;border-radius: 13px;">
+        <img src="KurtaWomen7(i).jpg" class="card-img-top" style="height:275px" alt="...">
+        <div class="card-body" style="padding: 20px;">
+            <a href="Wkurta7.html"><h3 style="font-size:29px;font-weight: bold;">AKS</h3></a>
+    <div style ="font-size: larger;">FLORAL PRINT ANARKALI KURTA WITH TIE-UP</div>
+    <div style="padding-top: 8px;display: flex;flex-direction: row;gap:10px">
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >S</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >M</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >L</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >XL</div>
+        <button id="cart" style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px">cart</button>
+    </div>
+    <div style="font-size:xx-large;font-weight:bolder">Rs.1825</div>
+    
+        <s style="color:gray;padding-left: 2px;" > Rs.2699</s>
+        <span style="font-size:large;color: palevioletred;">&#40 31% off &#41</span>
+    
+        </div>
+    </div>
+
+    <div class="card item" style="width: 18rem;box-shadow: -15px 15px 50px gainsboro;border-radius: 13px;">
+        <img src="KurtaWomen8(i).jpg" class="card-img-top" style="height:275px" alt="...">
+        <div class="card-body" style="padding: 20px;">
+            <a href="Wkurta8.html"><h3 style="font-size:29px;font-weight: bold;">INDIE CLOSET</h3></a>
+    <div style ="font-size: larger;">FLORAL EMBELLISHED ANARKALI KURTA SET</div>
+    <div style="padding-top: 8px;display: flex;flex-direction: row;gap:10px">
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >S</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >M</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >L</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >XL</div>
+        <div style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px" >XXL</div>
+        <button id="cart" style="color: gray; border-radius: 10px;border-color:gainsboro;border-width: 1px;border-style:inset;text-align: center;width:35px">cart</button>
+    </div>
+    <div style="font-size:xx-large;font-weight:bolder">Rs.1299</div>
+    
+        <s style="color:gray;padding-left: 2px;" > Rs.3999</s>
+        <span style="font-size:large;color: palevioletred;">&#40 68% off &#41</span>
+    
+        </div>
+    </div>
+</div>
+
+<div style="display: flex;justify-content: center;padding-top: 2.55em;">
+    <nav aria-label="Page navigation example" style="padding-top:2em;">
+        <ul class="pagination pagination-lg">
+          <li class="page-item"><a class="page-link" style="color:black" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" style="color:black" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" style="color:black" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" style="color:black" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" style="color:black" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+    <br>
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>ABOUT</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Our Story</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Media</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Sustainibility</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>LEGAL STUFF</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Terms of use</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Terms of safe</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                      
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <hr>
+            </div>	
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+
+                    <p class="h6">© All right Reversed.<a class="text-green ml-2" href="index.html" target="_blank">Shoptacle</a></p>
+                </div>
+                <hr>
+            </div>	
+        </div>
+    </section>
+    <span>
+        <span class="cart">
+            <div><img src="KurtaWomen1(i).jpg" alt="" class="productimage"></div>
+            <div class="productdetail">
+                <div id="title">Kimayra</div>
+                <div id="title1">PRINTED ANARKALI KURTA SUIT SET</div>
+                <span id="size">Size:S</span>
+                <span id="quantity">Q:1</span>
+                <span id="price">Rs.1799</span>
+            </div>
+            <div class="totalprice">
+                <span><i class="fa-solid fa-trash"></i></span>
+                <span class="total">Rs.1799</span>
+            </div>
+        </span>
+       
+    </span>
+        
+    </div>
+    </span>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+      
+
+    </script>
+    </body>
+                                </html>
